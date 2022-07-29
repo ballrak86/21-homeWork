@@ -1,0 +1,74 @@
+# default to using syslog. /etc/rsyslog.d/45-frr.conf places the log in
+# /var/log/frr/frr.log
+#
+# Note:
+# FRR's configuration shell, vtysh, dynamically edits the live, in-memory
+# configuration while FRR is running. When instructed, vtysh will persist the
+# live configuration to this file, overwriting its contents. If you want to
+# avoid this, you can edit this file manually before starting FRR, or instruct
+# vtysh to write configuration to a different file.
+frr version 8.1
+frr defaults traditional
+hostname {{ ansible_hostname }}
+log syslog informational
+no ipv6 forwarding
+service integrated-vtysh-config
+!
+interface enp0s8
+{% if router_id_enable == false %}!{% endif %}router-id {{ router_id }}
+{% for router in frr_var %}
+{% if ansible_hostname == router.name %}
+ description {{ router.enp0s8des }}
+ ip address {{ router.enp0s8 }}
+{% endif %}
+{% endfor %}
+ ip ospf mtu-ignore
+{% if ansible_hostname == 'router1' %}
+ ip ospf cost 1000
+{% elif ansible_hostname == 'router2' and symmetric_routing == true %}
+ ip ospf cost 1000
+{% else %}
+ !ip ospf cost 450
+{% endif %} ip ospf hello-interval 10
+ ip ospf dead-interval 30
+!
+interface enp0s9
+{% if router_id_enable == false %}!{% endif %}router-id {{ router_id }}
+{% for router in frr_var %}
+{% if ansible_hostname == router.name %}
+ description {{ router.enp0s9des }}
+ ip address {{ router.enp0s9 }}
+{% endif %}
+{% endfor %}
+ ip ospf mtu-ignore
+ !ip ospf cost 45
+ ip ospf hello-interval 10
+ ip ospf dead-interval 30
+
+interface enp0s10
+{% if router_id_enable == false %}!{% endif %}router-id {{ router_id }}
+{% for router in frr_var %}
+{% if ansible_hostname == router.name %}
+ description {{ router.enp0s10des }}
+ ip address {{ router.enp0s10 }}
+{% endif %}
+{% endfor %}
+ ip ospf mtu-ignore
+ !ip ospf cost 45
+ ip ospf hello-interval 10
+ ip ospf dead-interval 30
+!
+router ospf
+{% if router_id_enable == false %}!{% endif %}router-id {{ router_id }}
+{% for router in frr_var %}
+{% if ansible_hostname == router.name %}
+ network {{ router.network1 }} area 0
+ network {{ router.network2 }} area 0
+ network {{ router.network3 }} area 0
+ neighbor {{ router.neighbor1 }}
+ neighbor {{ router.neighbor2 }}
+{% endif %}
+{% endfor %}
+
+log file /var/log/frr/frr.log
+default-information originate always

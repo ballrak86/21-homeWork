@@ -1,0 +1,432 @@
+==> router3: You assigned a static IP ending in ".1" to this machine.
+==> router3: This is very often used by the router and can cause the
+==> router3: network to not work properly. If the network doesn't work
+==> router3: properly, try changing this IP.
+==> router3: You assigned a static IP ending in ".1" to this machine.
+==> router3: This is very often used by the router and can cause the
+==> router3: network to not work properly. If the network doesn't work
+==> router3: properly, try changing this IP.
+==> router3: Forcing shutdown of VM...
+==> router3: Destroying VM and associated drives...
+==> router2: You assigned a static IP ending in ".1" to this machine.
+==> router2: This is very often used by the router and can cause the
+==> router2: network to not work properly. If the network doesn't work
+==> router2: properly, try changing this IP.
+==> router2: Forcing shutdown of VM...
+==> router2: Destroying VM and associated drives...
+==> router1: You assigned a static IP ending in ".1" to this machine.
+==> router1: This is very often used by the router and can cause the
+==> router1: network to not work properly. If the network doesn't work
+==> router1: properly, try changing this IP.
+==> router1: You assigned a static IP ending in ".1" to this machine.
+==> router1: This is very often used by the router and can cause the
+==> router1: network to not work properly. If the network doesn't work
+==> router1: properly, try changing this IP.
+==> router1: You assigned a static IP ending in ".1" to this machine.
+==> router1: This is very often used by the router and can cause the
+==> router1: network to not work properly. If the network doesn't work
+==> router1: properly, try changing this IP.
+==> router1: Forcing shutdown of VM...
+==> router1: Destroying VM and associated drives...
+Bringing machine 'router1' up with 'virtualbox' provider...
+Bringing machine 'router2' up with 'virtualbox' provider...
+Bringing machine 'router3' up with 'virtualbox' provider...
+==> router1: You assigned a static IP ending in ".1" to this machine.
+==> router1: This is very often used by the router and can cause the
+==> router1: network to not work properly. If the network doesn't work
+==> router1: properly, try changing this IP.
+==> router1: You assigned a static IP ending in ".1" to this machine.
+==> router1: This is very often used by the router and can cause the
+==> router1: network to not work properly. If the network doesn't work
+==> router1: properly, try changing this IP.
+==> router1: You assigned a static IP ending in ".1" to this machine.
+==> router1: This is very often used by the router and can cause the
+==> router1: network to not work properly. If the network doesn't work
+==> router1: properly, try changing this IP.
+==> router1: Importing base box 'ubuntu/focal64'...
+==> router1: Matching MAC address for NAT networking...
+==> router1: You assigned a static IP ending in ".1" to this machine.
+==> router1: This is very often used by the router and can cause the
+==> router1: network to not work properly. If the network doesn't work
+==> router1: properly, try changing this IP.
+==> router1: You assigned a static IP ending in ".1" to this machine.
+==> router1: This is very often used by the router and can cause the
+==> router1: network to not work properly. If the network doesn't work
+==> router1: properly, try changing this IP.
+==> router1: You assigned a static IP ending in ".1" to this machine.
+==> router1: This is very often used by the router and can cause the
+==> router1: network to not work properly. If the network doesn't work
+==> router1: properly, try changing this IP.
+==> router1: Setting the name of the VM: ospf_router1_1659096015750_41542
+==> router1: Clearing any previously set network interfaces...
+==> router1: Preparing network interfaces based on configuration...
+    router1: Adapter 1: nat
+    router1: Adapter 2: intnet
+    router1: Adapter 3: intnet
+    router1: Adapter 4: intnet
+    router1: Adapter 5: hostonly
+==> router1: Forwarding ports...
+    router1: 22 (guest) => 2222 (host) (adapter 1)
+==> router1: Running 'pre-boot' VM customizations...
+==> router1: Booting VM...
+==> router1: Waiting for machine to boot. This may take a few minutes...
+    router1: SSH address: 127.0.0.1:2222
+    router1: SSH username: vagrant
+    router1: SSH auth method: private key
+    router1:
+    router1: Vagrant insecure key detected. Vagrant will automatically replace
+    router1: this with a newly generated keypair for better security.
+    router1:
+    router1: Inserting generated public key within guest...
+    router1: Removing insecure key from the guest if it's present...
+    router1: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> router1: Machine booted and ready!
+==> router1: Checking for guest additions in VM...
+    router1: The guest additions on this VM do not match the installed version of
+    router1: VirtualBox! In most cases this is fine, but in rare cases it can
+    router1: prevent things such as shared folders from working properly. If you see
+    router1: shared folder errors, please make sure the guest additions within the
+    router1: virtual machine match the version of VirtualBox you have installed on
+    router1: your host and reload your VM.
+    router1:
+    router1: Guest Additions Version: 6.1.34
+    router1: VirtualBox Version: 6.0
+==> router1: Setting hostname...
+==> router1: Configuring and enabling network interfaces...
+==> router1: Mounting shared folders...
+    router1: /vagrant => /home/lx/git/ospf
+==> router2: You assigned a static IP ending in ".1" to this machine.
+==> router2: This is very often used by the router and can cause the
+==> router2: network to not work properly. If the network doesn't work
+==> router2: properly, try changing this IP.
+==> router2: Importing base box 'ubuntu/focal64'...
+==> router2: Matching MAC address for NAT networking...
+==> router2: You assigned a static IP ending in ".1" to this machine.
+==> router2: This is very often used by the router and can cause the
+==> router2: network to not work properly. If the network doesn't work
+==> router2: properly, try changing this IP.
+==> router2: Setting the name of the VM: ospf_router2_1659096095925_73017
+==> router2: Fixed port collision for 22 => 2222. Now on port 2200.
+==> router2: Clearing any previously set network interfaces...
+==> router2: Preparing network interfaces based on configuration...
+    router2: Adapter 1: nat
+    router2: Adapter 2: intnet
+    router2: Adapter 3: intnet
+    router2: Adapter 4: intnet
+    router2: Adapter 5: hostonly
+==> router2: Forwarding ports...
+    router2: 22 (guest) => 2200 (host) (adapter 1)
+==> router2: Running 'pre-boot' VM customizations...
+==> router2: Booting VM...
+==> router2: Waiting for machine to boot. This may take a few minutes...
+    router2: SSH address: 127.0.0.1:2200
+    router2: SSH username: vagrant
+    router2: SSH auth method: private key
+    router2: Warning: Connection reset. Retrying...
+    router2: Warning: Remote connection disconnect. Retrying...
+    router2:
+    router2: Vagrant insecure key detected. Vagrant will automatically replace
+    router2: this with a newly generated keypair for better security.
+    router2:
+    router2: Inserting generated public key within guest...
+    router2: Removing insecure key from the guest if it's present...
+    router2: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> router2: Machine booted and ready!
+==> router2: Checking for guest additions in VM...
+    router2: The guest additions on this VM do not match the installed version of
+    router2: VirtualBox! In most cases this is fine, but in rare cases it can
+    router2: prevent things such as shared folders from working properly. If you see
+    router2: shared folder errors, please make sure the guest additions within the
+    router2: virtual machine match the version of VirtualBox you have installed on
+    router2: your host and reload your VM.
+    router2:
+    router2: Guest Additions Version: 6.1.34
+    router2: VirtualBox Version: 6.0
+==> router2: Setting hostname...
+==> router2: Configuring and enabling network interfaces...
+==> router2: Mounting shared folders...
+    router2: /vagrant => /home/lx/git/ospf
+==> router3: You assigned a static IP ending in ".1" to this machine.
+==> router3: This is very often used by the router and can cause the
+==> router3: network to not work properly. If the network doesn't work
+==> router3: properly, try changing this IP.
+==> router3: You assigned a static IP ending in ".1" to this machine.
+==> router3: This is very often used by the router and can cause the
+==> router3: network to not work properly. If the network doesn't work
+==> router3: properly, try changing this IP.
+==> router3: Importing base box 'ubuntu/focal64'...
+==> router3: Matching MAC address for NAT networking...
+==> router3: You assigned a static IP ending in ".1" to this machine.
+==> router3: This is very often used by the router and can cause the
+==> router3: network to not work properly. If the network doesn't work
+==> router3: properly, try changing this IP.
+==> router3: You assigned a static IP ending in ".1" to this machine.
+==> router3: This is very often used by the router and can cause the
+==> router3: network to not work properly. If the network doesn't work
+==> router3: properly, try changing this IP.
+==> router3: Setting the name of the VM: ospf_router3_1659096167436_64848
+==> router3: Fixed port collision for 22 => 2222. Now on port 2201.
+==> router3: Clearing any previously set network interfaces...
+==> router3: Preparing network interfaces based on configuration...
+    router3: Adapter 1: nat
+    router3: Adapter 2: intnet
+    router3: Adapter 3: intnet
+    router3: Adapter 4: intnet
+    router3: Adapter 5: hostonly
+==> router3: Forwarding ports...
+    router3: 22 (guest) => 2201 (host) (adapter 1)
+==> router3: Running 'pre-boot' VM customizations...
+==> router3: Booting VM...
+==> router3: Waiting for machine to boot. This may take a few minutes...
+    router3: SSH address: 127.0.0.1:2201
+    router3: SSH username: vagrant
+    router3: SSH auth method: private key
+    router3:
+    router3: Vagrant insecure key detected. Vagrant will automatically replace
+    router3: this with a newly generated keypair for better security.
+    router3:
+    router3: Inserting generated public key within guest...
+    router3: Removing insecure key from the guest if it's present...
+    router3: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> router3: Machine booted and ready!
+==> router3: Checking for guest additions in VM...
+    router3: The guest additions on this VM do not match the installed version of
+    router3: VirtualBox! In most cases this is fine, but in rare cases it can
+    router3: prevent things such as shared folders from working properly. If you see
+    router3: shared folder errors, please make sure the guest additions within the
+    router3: virtual machine match the version of VirtualBox you have installed on
+    router3: your host and reload your VM.
+    router3:
+    router3: Guest Additions Version: 6.1.34
+    router3: VirtualBox Version: 6.0
+==> router3: Setting hostname...
+==> router3: Configuring and enabling network interfaces...
+==> router3: Mounting shared folders...
+    router3: /vagrant => /home/lx/git/ospf
+==> router3: Running provisioner: ansible...
+Vagrant gathered an unknown Ansible version:
+
+ansible [core 2.11.7]
+  config file = /home/lx/git/ospf/ansible.cfg
+  configured module search path = ['/root/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.6/dist-packages/ansible
+  ansible collection location = /root/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/local/bin/ansible
+  python version = 3.6.9 (default, Jun 29 2022, 11:45:57) [GCC 8.4.0]
+  jinja version = 3.0.3
+  libyaml = True
+
+and falls back on the compatibility mode '1.8'.
+
+Alternatively, the compatibility mode can be specified in your Vagrantfile:
+https://www.vagrantup.com/docs/provisioning/ansible_common.html#compatibility_mode
+
+    router3: Running ansible-playbook...
+[DEPRECATION WARNING]: Ansible will require Python 3.8 or newer on the
+controller starting with Ansible 2.12. Current version: 3.6.9 (default, Jun 29
+2022, 11:45:57) [GCC 8.4.0]. This feature will be removed from ansible-core in
+version 2.12. Deprecation warnings can be disabled by setting
+deprecation_warnings=False in ansible.cfg.
+
+PLAY [OSPF] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [router3]
+ok: [router1]
+ok: [router2]
+
+TASK [install base tools] ******************************************************
+changed: [router2]
+changed: [router3]
+changed: [router1]
+
+TASK [disable ufw service] *****************************************************
+changed: [router3]
+changed: [router2]
+changed: [router1]
+
+TASK [add gpg frrouting.org] ***************************************************
+changed: [router1]
+changed: [router3]
+changed: [router2]
+
+TASK [add frr repo] ************************************************************
+changed: [router3]
+changed: [router1]
+changed: [router2]
+
+TASK [install FRR packages] ****************************************************
+changed: [router1]
+changed: [router2]
+changed: [router3]
+
+TASK [set up forward packages across routers] **********************************
+changed: [router3]
+changed: [router1]
+changed: [router2]
+
+TASK [set up asynchronous routing] *********************************************
+changed: [router2]
+changed: [router3]
+changed: [router1]
+
+TASK [base set up OSPF] ********************************************************
+changed: [router3]
+changed: [router1]
+changed: [router2]
+
+TASK [set up OSPF] *************************************************************
+changed: [router2]
+changed: [router3]
+changed: [router1]
+
+TASK [restart FRR] *************************************************************
+changed: [router1]
+changed: [router2]
+changed: [router3]
+
+PLAY RECAP *********************************************************************
+router1                    : ok=11   changed=10   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+router2                    : ok=11   changed=10   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+router3                    : ok=11   changed=10   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+
+root@router1:~# traceroute 192.168.20.1
+traceroute to 192.168.20.1 (192.168.20.1), 30 hops max, 60 byte packets
+ 1  10.0.12.2 (10.0.12.2)  0.578 ms  0.807 ms  0.670 ms
+ 2  192.168.20.1 (192.168.20.1)  1.015 ms  1.192 ms  0.873 ms
+root@router1:~# ping -I 192.168.10.1 192.168.20.1
+PING 192.168.20.1 (192.168.20.1) from 192.168.10.1 : 56(84) bytes of data.
+64 bytes from 192.168.20.1: icmp_seq=1 ttl=64 time=1.20 ms
+64 bytes from 192.168.20.1: icmp_seq=2 ttl=64 time=1.30 ms
+64 bytes from 192.168.20.1: icmp_seq=3 ttl=64 time=1.29 ms
+64 bytes from 192.168.20.1: icmp_seq=4 ttl=64 time=1.15 ms
+64 bytes from 192.168.20.1: icmp_seq=5 ttl=64 time=1.10 ms
+64 bytes from 192.168.20.1: icmp_seq=6 ttl=64 time=1.12 ms
+64 bytes from 192.168.20.1: icmp_seq=7 ttl=64 time=1.69 ms
+64 bytes from 192.168.20.1: icmp_seq=8 ttl=64 time=1.18 ms
+64 bytes from 192.168.20.1: icmp_seq=9 ttl=64 time=1.06 ms
+64 bytes from 192.168.20.1: icmp_seq=10 ttl=64 time=1.56 ms
+64 bytes from 192.168.20.1: icmp_seq=11 ttl=64 time=1.01 ms
+64 bytes from 192.168.20.1: icmp_seq=12 ttl=64 time=1.27 ms
+64 bytes from 192.168.20.1: icmp_seq=13 ttl=64 time=1.18 ms
+64 bytes from 192.168.20.1: icmp_seq=14 ttl=64 time=1.23 ms
+64 bytes from 192.168.20.1: icmp_seq=15 ttl=64 time=1.10 ms
+64 bytes from 192.168.20.1: icmp_seq=16 ttl=64 time=1.28 ms
+64 bytes from 192.168.20.1: icmp_seq=17 ttl=64 time=1.30 ms
+64 bytes from 192.168.20.1: icmp_seq=18 ttl=64 time=1.23 ms
+64 bytes from 192.168.20.1: icmp_seq=19 ttl=64 time=1.25 ms
+64 bytes from 192.168.20.1: icmp_seq=20 ttl=64 time=1.10 ms
+64 bytes from 192.168.20.1: icmp_seq=21 ttl=64 time=1.42 ms
+64 bytes from 192.168.20.1: icmp_seq=22 ttl=64 time=1.10 ms
+64 bytes from 192.168.20.1: icmp_seq=23 ttl=64 time=1.20 ms
+64 bytes from 192.168.20.1: icmp_seq=24 ttl=64 time=1.17 ms
+64 bytes from 192.168.20.1: icmp_seq=25 ttl=64 time=1.16 ms
+64 bytes from 192.168.20.1: icmp_seq=26 ttl=64 time=1.19 ms
+64 bytes from 192.168.20.1: icmp_seq=27 ttl=64 time=1.17 ms
+64 bytes from 192.168.20.1: icmp_seq=28 ttl=64 time=1.29 ms
+64 bytes from 192.168.20.1: icmp_seq=29 ttl=64 time=1.09 ms
+64 bytes from 192.168.20.1: icmp_seq=30 ttl=64 time=1.42 ms
+64 bytes from 192.168.20.1: icmp_seq=31 ttl=64 time=1.25 ms
+64 bytes from 192.168.20.1: icmp_seq=32 ttl=64 time=1.20 ms
+64 bytes from 192.168.20.1: icmp_seq=33 ttl=64 time=1.36 ms
+64 bytes from 192.168.20.1: icmp_seq=34 ttl=64 time=1.17 ms
+64 bytes from 192.168.20.1: icmp_seq=35 ttl=64 time=1.29 ms
+64 bytes from 192.168.20.1: icmp_seq=36 ttl=64 time=1.19 ms
+64 bytes from 192.168.20.1: icmp_seq=37 ttl=64 time=1.43 ms
+64 bytes from 192.168.20.1: icmp_seq=38 ttl=64 time=1.24 ms
+64 bytes from 192.168.20.1: icmp_seq=39 ttl=64 time=1.51 ms
+64 bytes from 192.168.20.1: icmp_seq=40 ttl=64 time=1.34 ms
+64 bytes from 192.168.20.1: icmp_seq=41 ttl=64 time=1.16 ms
+^C
+--- 192.168.20.1 ping statistics ---
+41 packets transmitted, 41 received, 0% packet loss, time 40173ms
+rtt min/avg/max/mdev = 1.010/1.242/1.692/0.138 ms
+root@router1:~# ping -I 192.168.10.1 192.168.20.1
+PING 192.168.20.1 (192.168.20.1) from 192.168.10.1 : 56(84) bytes of data.
+64 bytes from 192.168.20.1: icmp_seq=1 ttl=63 time=1.16 ms
+64 bytes from 192.168.20.1: icmp_seq=2 ttl=63 time=1.14 ms
+64 bytes from 192.168.20.1: icmp_seq=3 ttl=63 time=1.23 ms
+64 bytes from 192.168.20.1: icmp_seq=4 ttl=63 time=1.26 ms
+64 bytes from 192.168.20.1: icmp_seq=5 ttl=63 time=1.31 ms
+64 bytes from 192.168.20.1: icmp_seq=6 ttl=63 time=1.40 ms
+64 bytes from 192.168.20.1: icmp_seq=7 ttl=63 time=1.08 ms
+64 bytes from 192.168.20.1: icmp_seq=8 ttl=63 time=1.41 ms
+64 bytes from 192.168.20.1: icmp_seq=9 ttl=63 time=1.15 ms
+64 bytes from 192.168.20.1: icmp_seq=10 ttl=63 time=1.05 ms
+64 bytes from 192.168.20.1: icmp_seq=11 ttl=63 time=1.15 ms
+64 bytes from 192.168.20.1: icmp_seq=12 ttl=63 time=1.05 ms
+64 bytes from 192.168.20.1: icmp_seq=13 ttl=63 time=1.27 ms
+64 bytes from 192.168.20.1: icmp_seq=14 ttl=63 time=2.10 ms
+64 bytes from 192.168.20.1: icmp_seq=15 ttl=63 time=1.15 ms
+64 bytes from 192.168.20.1: icmp_seq=16 ttl=63 time=1.44 ms
+64 bytes from 192.168.20.1: icmp_seq=17 ttl=63 time=1.26 ms
+64 bytes from 192.168.20.1: icmp_seq=18 ttl=63 time=1.08 ms
+64 bytes from 192.168.20.1: icmp_seq=19 ttl=63 time=1.28 ms
+^C
+--- 192.168.20.1 ping statistics ---
+19 packets transmitted, 19 received, 0% packet loss, time 18044ms
+rtt min/avg/max/mdev = 1.048/1.261/2.103/0.229 ms
+root@router2:~# tcpdump -i enp0s9
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on enp0s9, link-type EN10MB (Ethernet), capture size 262144 bytes
+12:23:12.922816 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 14, length 64
+12:23:13.924262 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 15, length 64
+12:23:14.926212 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 16, length 64
+12:23:15.927994 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 17, length 64
+12:23:16.181117 IP kozh-rt1--gi0-0_100.kontur > ospf-all.mcast.net: OSPFv2, Hello, length 48
+12:23:16.861307 IP 10.0.11.1 > ospf-all.mcast.net: OSPFv2, Hello, length 48
+12:23:16.929645 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 18, length 64
+12:23:17.931324 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 19, length 64
+12:23:18.932910 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 20, length 64
+12:23:19.934816 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 21, length 64
+12:23:20.936510 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 22, length 64
+12:23:21.938073 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 23, length 64
+12:23:22.939483 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 24, length 64
+12:23:23.941139 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 25, length 64
+12:23:24.942710 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 26, length 64
+12:23:25.944324 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 27, length 64
+12:23:26.181550 IP kozh-rt1--gi0-0_100.kontur > ospf-all.mcast.net: OSPFv2, Hello, length 48
+12:23:26.861390 IP 10.0.11.1 > ospf-all.mcast.net: OSPFv2, Hello, length 48
+12:23:26.946004 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 28, length 64
+12:23:27.974848 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 29, length 64
+12:23:28.976646 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 30, length 64
+12:23:29.978123 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 31, length 64
+12:23:30.979812 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 32, length 64
+12:23:31.980779 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 33, length 64
+12:23:32.982416 IP 192.168.10.1 > router2: ICMP echo request, id 1, seq 34, length 64
+^C
+25 packets captured
+25 packets received by filter
+0 packets dropped by kernel
+root@router2:~# tcpdump -i enp0s8
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on enp0s8, link-type EN10MB (Ethernet), capture size 262144 bytes
+12:23:35.065902 IP router2 > 192.168.10.1: ICMP echo reply, id 1, seq 36, length 64
+12:23:36.067684 IP router2 > 192.168.10.1: ICMP echo reply, id 1, seq 37, length 64
+12:23:36.181263 IP router2 > ospf-all.mcast.net: OSPFv2, Hello, length 48
+12:23:36.182097 IP 10.0.10.1 > ospf-all.mcast.net: OSPFv2, Hello, length 48
+12:23:37.069486 IP router2 > 192.168.10.1: ICMP echo reply, id 1, seq 38, length 64
+12:23:38.071218 IP router2 > 192.168.10.1: ICMP echo reply, id 1, seq 39, length 64
+12:23:39.072525 IP router2 > 192.168.10.1: ICMP echo reply, id 1, seq 40, length 64
+^C
+7 packets captured
+7 packets received by filter
+0 packets dropped by kernel
+root@router2:~# tcpdump -i enp0s9
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on enp0s9, link-type EN10MB (Ethernet), capture size 262144 bytes
+13:03:54.177989 IP 192.168.10.1 > router2: ICMP echo request, id 2, seq 14, length 64
+13:03:54.178030 IP router2 > 192.168.10.1: ICMP echo reply, id 2, seq 14, length 64
+13:03:55.179311 IP 192.168.10.1 > router2: ICMP echo request, id 2, seq 15, length 64
+13:03:55.179360 IP router2 > 192.168.10.1: ICMP echo reply, id 2, seq 15, length 64
+13:03:56.180708 IP 192.168.10.1 > router2: ICMP echo request, id 2, seq 16, length 64
+13:03:56.180756 IP router2 > 192.168.10.1: ICMP echo reply, id 2, seq 16, length 64
+13:03:57.182551 IP 192.168.10.1 > router2: ICMP echo request, id 2, seq 17, length 64
+13:03:57.182613 IP router2 > 192.168.10.1: ICMP echo reply, id 2, seq 17, length 64
+13:03:57.373872 IP kozh-rt1--gi0-0_100.kontur > ospf-all.mcast.net: OSPFv2, Hello, length 48
+13:03:57.392194 IP 10.0.11.1 > ospf-all.mcast.net: OSPFv2, Hello, length 48
+13:03:57.735344 IP6 fe80::a00:27ff:fe25:bb24 > ip6-allrouters: ICMP6, router solicitation, length 16
+^C
+11 packets captured
+11 packets received by filter
+0 packets dropped by kernel

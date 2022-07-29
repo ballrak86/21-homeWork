@@ -1,0 +1,6 @@
+[routers]
+router1 ansible_host=192.168.50.10 ansible_user=vagrant router_id=1.1.1.1 ansible_ssh_private_key_file=.vagrant/machines/router1/virtualbox/private_key
+
+router2 ansible_host=192.168.50.11 ansible_user=vagrant router_id=2.2.2.2 ansible_ssh_private_key_file=.vagrant/machines/router2/virtualbox/private_key
+
+router3 ansible_host=192.168.50.12 ansible_user=vagrant router_id=3.3.3.3 ansible_ssh_private_key_file=.vagrant/machines/router3/virtualbox/private_key
